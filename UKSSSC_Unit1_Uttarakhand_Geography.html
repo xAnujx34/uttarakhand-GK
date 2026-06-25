@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UKSSSC Unit 1 – Geographical Introduction of Uttarakhand</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f4f8; color: #1a202c; }
+  header { background: linear-gradient(135deg, #1a5276, #2e86c1); color: white; padding: 20px 24px; text-align: center; }
+  header h1 { font-size: 1.5em; }
+  header p { font-size: 0.85em; margin-top: 4px; opacity: 0.9; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; padding: 14px 16px; background: #fff; border-bottom: 2px solid #2e86c1; position: sticky; top: 0; z-index: 100; }
+  nav button { padding: 6px 12px; border: 2px solid #2e86c1; background: white; color: #2e86c1; border-radius: 20px; cursor: pointer; font-size: 0.78em; font-weight: 600; transition: all 0.2s; }
+  nav button.active, nav button:hover { background: #2e86c1; color: white; }
+  .section { display: none; padding: 16px; max-width: 900px; margin: 0 auto; }
+  .section.active { display: block; }
+  h2 { color: #1a5276; font-size: 1.15em; border-left: 4px solid #2e86c1; padding-left: 10px; margin: 16px 0 10px; }
+  h3 { color: #2e86c1; font-size: 0.95em; margin: 12px 0 6px; }
+  .card { background: white; border-radius: 10px; padding: 14px; margin: 10px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+  .highlight { background: #eaf4ff; border: 1px solid #aed6f1; border-radius: 8px; padding: 10px 14px; margin: 8px 0; font-size: 0.9em; }
+  .highlight b { color: #1a5276; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85em; margin: 8px 0; }
+  th { background: #1a5276; color: white; padding: 8px; text-align: left; }
+  td { padding: 7px 8px; border-bottom: 1px solid #e2e8f0; }
+  tr:nth-child(even) td { background: #f7faff; }
+  .tag { display: inline-block; background: #d5e8f7; color: #1a5276; border-radius: 12px; padding: 2px 10px; font-size: 0.78em; font-weight: 700; margin: 2px; }
+  .tag.red { background: #fde8e8; color: #c0392b; }
+  .tag.green { background: #d5f5e3; color: #1e8449; }
+  .tag.orange { background: #fef3d0; color: #b7770d; }
+  .quiz-section { background: white; border-radius: 10px; padding: 16px; margin: 10px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+  .question { margin: 14px 0; padding: 12px; background: #f8fbff; border-radius: 8px; border: 1px solid #d6eaf8; }
+  .question p { font-weight: 600; font-size: 0.9em; color: #1a202c; margin-bottom: 8px; }
+  .options label { display: block; padding: 6px 10px; margin: 4px 0; cursor: pointer; border-radius: 6px; font-size: 0.85em; border: 1px solid #e2e8f0; transition: background 0.15s; }
+  .options label:hover { background: #eaf4ff; }
+  .options input { margin-right: 8px; }
+  .options label.correct { background: #d5f5e3; border-color: #27ae60; color: #1e8449; font-weight: 700; }
+  .options label.wrong { background: #fde8e8; border-color: #e74c3c; color: #c0392b; }
+  .btn { background: #2e86c1; color: white; border: none; padding: 8px 20px; border-radius: 20px; cursor: pointer; font-size: 0.88em; font-weight: 600; margin: 6px 4px; }
+  .btn:hover { background: #1a5276; }
+  .score-box { background: #eaf4ff; border: 2px solid #2e86c1; border-radius: 10px; padding: 10px; text-align: center; font-weight: 700; color: #1a5276; display: none; margin-top: 10px; }
+  .tip { background: #fff8e1; border-left: 4px solid #f39c12; padding: 8px 12px; border-radius: 0 8px 8px 0; margin: 8px 0; font-size: 0.85em; }
+  ul { padding-left: 18px; font-size: 0.88em; line-height: 1.8; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🏔️ UKSSSC Unit 1 – Geographical Introduction of Uttarakhand</h1>
+  <p>Location &amp; Extent · Mountains · Peaks · Glaciers · Rivers · Lakes · Resources · Population</p>
+</header>
+<nav>
+  <button class="active" onclick="show('loc')">📍 Location</button>
+  <button onclick="show('mtn')">🏔️ Mountains</button>
+  <button onclick="show('peaks')">⛰️ Peaks</button>
+  <button onclick="show('glaciers')">🧊 Glaciers</button>
+  <button onclick="show('rivers')">🌊 Rivers</button>
+  <button onclick="show('lakes')">💧 Lakes</button>
+  <button onclick="show('resources')">🌿 Resources</button>
+  <button onclick="show('soil')">🪨 Soil</button>
+  <button onclick="show('pop')">👥 Population</button>
+  <button onclick="show('quiz')">📝 MCQ Quiz</button>
+</nav>
+
+<!-- LOCATION -->
+<div id="loc" class="section active">
+  <div class="card">
+    <h2>📍 Location & Extent</h2>
+    <div class="highlight"><b>Latitude:</b> 28°43′N to 31°27′N &nbsp;|&nbsp; <b>Longitude:</b> 77°34′E to 81°02′E</div>
+    <div class="highlight"><b>Total Area:</b> 53,483 km² (1.63% of India's area) &nbsp;|&nbsp; <b>Rank:</b> 18th largest state</div>
+    <div class="highlight"><b>Length (E–W):</b> 385 km &nbsp;|&nbsp; <b>Width (N–S):</b> 320 km &nbsp;|&nbsp; <b>Shape:</b> Almost rectangular</div>
+    <h3>Borders</h3>
+    <table>
+      <tr><th>Direction</th><th>Border</th></tr>
+      <tr><td>North</td><td>Tibet (China)</td></tr>
+      <tr><td>East</td><td>Nepal</td></tr>
+      <tr><td>West/NW</td><td>Himachal Pradesh</td></tr>
+      <tr><td>South</td><td>Uttar Pradesh</td></tr>
+    </table>
+    <h3>Key State Facts</h3>
+    <ul>
+      <li>Formed: <b>9 November 2000</b> (carved from Uttar Pradesh) as the <b>27th state</b></li>
+      <li>Previously called <b>Uttaranchal</b>; renamed <b>Uttarakhand</b> in January 2007</li>
+      <li><b>Devbhoomi</b> (Land of Gods) — 86% mountainous, 65% forested</li>
+      <li>Divided into 2 divisions: <b>Garhwal</b> (west) and <b>Kumaon</b> (east)</li>
+      <li>Total <b>13 districts</b></li>
+      <li><b>Winter Capital:</b> Dehradun &nbsp;|&nbsp; <b>Summer Capital:</b> Bhararisain &nbsp;|&nbsp; <b>Judicial Capital:</b> Nainital</li>
+    </ul>
+    <div class="tip">💡 <b>Exam Tip:</b> The state was the 27th state, formed on 9 Nov 2000. The name "Uttarakhand" = Sanskrit "Uttara" (North) + "Khand" (part).</div>
+  </div>
+</div>
+
+<!-- MOUNTAINS -->
+<div id="mtn" class="section">
+  <div class="card">
+    <h2>🏔️ Mountain Ranges & Physiographic Zones</h2>
+    <p style="font-size:0.88em; margin-bottom:10px;">Uttarakhand is divided into <b>3 main physiographic zones</b> running NW–SE:</p>
+    <table>
+      <tr><th>Zone</th><th>Local Name</th><th>Altitude</th><th>Key Features</th></tr>
+      <tr><td><b>Greater Himalayas</b> (North)</td><td>Himadri</td><td>4,500–7,817 m</td><td>Highest peaks, glaciers; in 6 districts (Pithoragarh, Uttarkashi, Tehri, Rudraprayag, Chamoli, Bageshwar)</td></tr>
+      <tr><td><b>Lesser Himalayas / Middle Himalayas</b></td><td>Himachal</td><td>1,200–4,500 m</td><td>Forested hills, deep valleys; width 70–100 km; copper, graphite, gypsum, magnesite found here; in 9 districts</td></tr>
+      <tr><td><b>Shiwaliks / Outer Himalayas</b> (South)</td><td>—</td><td>600–1,200 m</td><td>Foothills; dense forests; gives way to Terai-Bhabar plains</td></tr>
+    </table>
+    <h3>Plains (Southernmost)</h3>
+    <ul>
+      <li><b>Bhabar belt:</b> Porous gravel & pebbles deposited by Himalayan streams at Shiwalik base; largely infertile</li>
+      <li><b>Terai belt:</b> Dense forests, rich biodiversity, marshlands, fertile agricultural land; rich clayey loam soil</li>
+    </ul>
+    <div class="tip">💡 <b>Exam Tip:</b> The longitudinal valleys between Lesser Himalayas and Shiwaliks are called <b>Duns</b> (e.g., Doon Valley / Dehradun).</div>
+  </div>
+</div>
+
+<!-- PEAKS -->
+<div id="peaks" class="section">
+  <div class="card">
+    <h2>⛰️ Major Peaks of Uttarakhand</h2>
+    <table>
+      <tr><th>Peak</th><th>Height</th><th>District</th><th>Key Fact</th></tr>
+      <tr><td><b>Nanda Devi</b></td><td>7,817 m</td><td>Chamoli / Bageshwar / Pithoragarh border</td><td>Highest peak in Uttarakhand; 2nd highest in India; UNESCO Biosphere Reserve</td></tr>
+      <tr><td><b>Kamet</b></td><td>7,756 m</td><td>Chamoli</td><td>2nd highest in Garhwal; pyramid-shaped with 2 peaks; surrounded by 3 glaciers</td></tr>
+      <tr><td><b>Dunagiri / Doonagiri</b></td><td>7,066 m</td><td>Chamoli</td><td>Part of Nanda Devi Sanctuary Wall</td></tr>
+      <tr><td><b>Trishul</b></td><td>7,120 m</td><td>Bageshwar / Chamoli</td><td>3-peak group; Trishul I first peak over 7,122 m to be climbed (1907). Best viewed from Kausani.</td></tr>
+      <tr><td><b>Chaukhamba</b></td><td>7,068 m</td><td>Chamoli</td><td>4-peak massif; source of Gangotri glacier ice</td></tr>
+      <tr><td><b>Panchachuli</b></td><td>6,904 m</td><td>Pithoragarh</td><td>5-peak massif ("Five Fires of Pandavas")</td></tr>
+      <tr><td><b>Kedarnath</b></td><td>6,940 m</td><td>Rudraprayag</td><td>Sacred Char Dham site; peak near temple</td></tr>
+      <tr><td><b>Badrinath</b></td><td>7,138 m</td><td>Chamoli</td><td>Char Dham pilgrimage site</td></tr>
+      <tr><td><b>Bandarpunch</b></td><td>6,316 m</td><td>Uttarkashi</td><td>In Govind Pashu Vihar NP; source of Yamuna river</td></tr>
+      <tr><td><b>Neelkanth</b></td><td>6,597 m</td><td>Chamoli</td><td>"Queen of Garhwal"; overlooks Badrinath</td></tr>
+      <tr><td><b>Shivling</b></td><td>6,543 m</td><td>Uttarkashi</td><td>Near Gangotri glacier snout; pyramid-shaped</td></tr>
+      <tr><td><b>Nanda Devi East</b></td><td>7,434 m</td><td>Chamoli / Pithoragarh</td><td>Twin peak with Nanda Devi West; 12 peaks >6,400 m within Sanctuary</td></tr>
+      <tr><td><b>Swargarohini</b></td><td>6,252 m</td><td>Uttarkashi</td><td>Associated with Mahabharata</td></tr>
+    </table>
+    <div class="tip">💡 <b>MCQ Favourite:</b> Nanda Devi = highest in UK, 2nd highest in India. Kamet = 2nd highest in Garhwal. Trishul I was first >7,122m peak climbed in 1907.</div>
+  </div>
+</div>
+
+<!-- GLACIERS -->
+<div id="glaciers" class="section">
+  <div class="card">
+    <h2>🧊 Major Glaciers of Uttarakhand</h2>
+    <div class="highlight"><b>Total glaciers in Uttarakhand:</b> ~900+ | Gangotri is the <b>largest glacier in Uttarakhand</b> and <b>2nd largest glacier in Himalayas</b></div>
+    <table>
+      <tr><th>Glacier</th><th>District</th><th>River Origin</th><th>Key Facts</th></tr>
+      <tr><td><b>Gangotri</b></td><td>Uttarkashi</td><td>Bhagirathi (→ Ganga)</td><td>Largest in Uttarakhand; not a single valley glacier — a combination. Snout called <b>Gaumukh</b>; base for Shivling climb</td></tr>
+      <tr><td><b>Yamunotri / Champasar</b></td><td>Uttarkashi</td><td>Yamuna</td><td>On Kalind Mountain on SW slopes of Bandarpunch; alt. 4,421 m; Char Dham site</td></tr>
+      <tr><td><b>Milam</b></td><td>Pithoragarh</td><td>Gori Ganga</td><td>Largest glacier in Kumaon region (37 km²); India's 6th largest; between Trishuli & Kohli peaks; trek from Munsiyari</td></tr>
+      <tr><td><b>Pindari</b></td><td>Bageshwar</td><td>Pindar River (→ Alaknanda)</td><td>90 km round-trip trek from Loharkhet; south of Nanda Devi; popular for beginners</td></tr>
+      <tr><td><b>Khatling</b></td><td>Tehri Garhwal</td><td>Bhilangana (→ Bhagirathi)</td><td>Alt. 3,700 m; surrounded by Jogin group, Barte Kauter, Meru peaks; trek from Ghuttu village</td></tr>
+      <tr><td><b>Kafni</b></td><td>Bageshwar</td><td>Kafni River</td><td>Left of Pindar Valley; alt. ~3,800 m; surrounded by Nanda Kot, Nanda Devi peaks</td></tr>
+      <tr><td><b>Nanda Devi (cluster)</b></td><td>Chamoli</td><td>Multiple</td><td>7 glaciers inside Nanda Devi Biosphere Reserve; Nanda Devi North & South are main ones</td></tr>
+      <tr><td><b>Doonagiri / Dunagiri</b></td><td>Chamoli</td><td>Dhauli Ganga system</td><td>~5.5 km long; part of 500+ glaciers of Dhauli Ganga system</td></tr>
+      <tr><td><b>Ralam</b></td><td>Pithoragarh</td><td>Ralam River</td><td>Darma Valley; below Panchachuli peaks</td></tr>
+      <tr><td><b>Bhandarpunch</b></td><td>Uttarkashi</td><td>Yamuna tributaries</td><td>Near Bandarpunch massif</td></tr>
+      <tr><td><b>Satopanth</b></td><td>Chamoli</td><td>Alaknanda</td><td>Glacial lake at 15,100 ft; triangular shape; sacred site (Brahma, Vishnu, Shiva corners)</td></tr>
+    </table>
+    <div class="tip">💡 <b>Key:</b> Gangotri → Bhagirathi → Ganga. Yamunotri → Yamuna. Milam → Gori Ganga. Pindari → Pindar. Khatling → Bhilangana.</div>
+  </div>
+</div>
+
+<!-- RIVERS -->
+<div id="rivers" class="section">
+  <div class="card">
+    <h2>🌊 Rivers of Uttarakhand</h2>
+    <div class="highlight">Uttarakhand has <b>221 rivers</b> with total length of <b>10,913 km</b>. Two sacred rivers — <b>Ganga</b> and <b>Yamuna</b> — originate here.</div>
+    <h3>Ganga System (Most Important)</h3>
+    <table>
+      <tr><th>River</th><th>Origin</th><th>Key Confluences / Facts</th></tr>
+      <tr><td><b>Bhagirathi</b></td><td>Gangotri Glacier (Gaumukh)</td><td>Meets Alaknanda at <b>Devprayag</b> → forms Ganga</td></tr>
+      <tr><td><b>Alaknanda</b></td><td>Satopanth & Bhagirath Kharak glaciers</td><td>Receives Mandakini at Rudraprayag; Pindar at Karnaprayag; Nandakini at Nandaprayag; Dhauliganga at Vishnuprayag</td></tr>
+      <tr><td><b>Mandakini</b></td><td>Kedarnath area</td><td>Meets Alaknanda at <b>Rudraprayag</b></td></tr>
+      <tr><td><b>Pindar</b></td><td>Pindari Glacier</td><td>Meets Alaknanda at <b>Karnaprayag</b></td></tr>
+      <tr><td><b>Nandakini</b></td><td>Nanda Ghunti</td><td>Meets Alaknanda at <b>Nandaprayag</b></td></tr>
+      <tr><td><b>Dhauliganga</b></td><td>Garhwal Himalayas</td><td>Meets Alaknanda at <b>Vishnuprayag</b></td></tr>
+    </table>
+    <h3>Panch Prayag (Five Confluences on Alaknanda)</h3>
+    <div class="highlight">
+      Vishnuprayag → Nandaprayag → Karnaprayag → Rudraprayag → <b>Devprayag</b> (Ganga formed here)
+    </div>
+    <h3>Yamuna System</h3>
+    <table>
+      <tr><th>River</th><th>Origin</th><th>Key Facts</th></tr>
+      <tr><td><b>Yamuna</b></td><td>Yamunotri / Champasar Glacier</td><td>Westernmost watershed; major tributary = <b>Tons</b></td></tr>
+      <tr><td><b>Tons</b></td><td>Bandarpunch area</td><td>Largest tributary of Yamuna in UK</td></tr>
+    </table>
+    <h3>Kumaon Rivers</h3>
+    <table>
+      <tr><th>River</th><th>Also Known As</th><th>Key Facts</th></tr>
+      <tr><td><b>Kali / Sharda</b></td><td>Mahakali</td><td>Eastern border river with Nepal; Sarju & Gori Ganga join it</td></tr>
+      <tr><td><b>Ramganga (West)</b></td><td>—</td><td>Originates from Lesser Himalayas; passes through Jim Corbett NP</td></tr>
+      <tr><td><b>Kosi</b></td><td>—</td><td>Flows southward in Kumaon</td></tr>
+      <tr><td><b>Gori Ganga</b></td><td>—</td><td>Originates from Milam Glacier; joins Kali</td></tr>
+    </table>
+    <div class="tip">💡 <b>Tehri Dam</b> is on the Bhagirathi River — it is the <b>highest dam in India</b> (260.5 m). Located in Tehri Garhwal district.</div>
+  </div>
+</div>
+
+<!-- LAKES -->
+<div id="lakes" class="section">
+  <div class="card">
+    <h2>💧 Major Lakes of Uttarakhand</h2>
+    <table>
+      <tr><th>Lake</th><th>District</th><th>Altitude</th><th>Key Facts</th></tr>
+      <tr><td><b>Naini Tal</b></td><td>Nainital</td><td>2,084 m</td><td>Crescent/pear shaped; gives name to Nainital city; eye-shaped (Naini = eye)</td></tr>
+      <tr><td><b>Bhimtal</b></td><td>Nainital</td><td>1,370 m</td><td>Largest lake in Kumaon; island in center</td></tr>
+      <tr><td><b>Naukuchiatal</b></td><td>Nainital</td><td>1,220 m</td><td>"Nine-cornered lake"; deepest lake in Nainital region</td></tr>
+      <tr><td><b>Sattal</b></td><td>Nainital</td><td>1,370 m</td><td>Group of 7 interconnected lakes</td></tr>
+      <tr><td><b>Khurpatal</b></td><td>Nainital</td><td>1,635 m</td><td>Hoof-shaped; part of Nainital lakes cluster</td></tr>
+      <tr><td><b>Hemkund Sahib</b></td><td>Chamoli</td><td>4,329 m</td><td>Sacred Sikh pilgrimage; glacial lake; surrounded by 7 peaks</td></tr>
+      <tr><td><b>Roopkund</b></td><td>Chamoli</td><td>5,029 m</td><td>"Mystery Lake" / Skeleton Lake; ~600 skeletal remains found; near Trishul peak</td></tr>
+      <tr><td><b>Satopanth Tal</b></td><td>Chamoli</td><td>4,600 m</td><td>Triangular glacial lake; sacred — Brahma, Vishnu, Shiva corners; near Badrinath</td></tr>
+      <tr><td><b>Vasundhara Tal</b></td><td>Chamoli</td><td>~4,200 m</td><td>Upper Himalayan highland near Badrinath</td></tr>
+      <tr><td><b>Deoria Tal</b></td><td>Rudraprayag</td><td>2,438 m</td><td>Reflection of Chaukhamba peaks; near Ukhimath</td></tr>
+      <tr><td><b>Tehri Lake</b></td><td>Tehri Garhwal</td><td>~600 m</td><td>Man-made reservoir formed by Tehri Dam; adventure tourism hub</td></tr>
+      <tr><td><b>Dodital</b></td><td>Uttarkashi</td><td>3,310 m</td><td>Origin of Asi Ganga; golden mahseer found here</td></tr>
+    </table>
+    <div class="tip">💡 <b>Key MCQ:</b> Roopkund = Mystery/Skeleton Lake. Bhimtal = largest lake in Kumaon. Hemkund = Sikh pilgrimage. Naukuchiatal = deepest in Nainital cluster.</div>
+  </div>
+</div>
+
+<!-- RESOURCES -->
+<div id="resources" class="section">
+  <div class="card">
+    <h2>🌿 Forest Resources</h2>
+    <div class="highlight">Forest cover = <b>24,303.04 km²</b> = <b>45.44%</b> of state's geographical area | 9 Forest Type Groups, 43 Forest Types (Champion & Seth classification 1968)</div>
+    <h3>Forest Types by Altitude</h3>
+    <table>
+      <tr><th>Forest Type</th><th>Location / Altitude</th><th>Key Species</th></tr>
+      <tr><td>Alpine Meadows (Bugyals)</td><td>Above 3,000–3,500 m</td><td>Grasses, herbs, Brahma Kamal; snow-covered in winter</td></tr>
+      <tr><td>Temperate Forests</td><td>1,800–3,000 m (Greater Himalayas)</td><td>Deodar, Blue Pine, Oak, Silver Fir, Spruce, Chestnut, Birch, Rhododendron (Burans)</td></tr>
+      <tr><td>Sub-tropical Pine</td><td>900–1,800 m</td><td>Chir Pine (Pinus roxburghii) — most common</td></tr>
+      <tr><td>Tropical Deciduous</td><td>Submontane/Shiwaliks</td><td>Sal, Teak, Shisham (all hardwoods)</td></tr>
+      <tr><td>Thorn Forests</td><td>Siwalik / Terai parts</td><td>Acacia, thorny shrubs</td></tr>
+    </table>
+    <h3>Van Panchayats</h3>
+    <p style="font-size:0.87em; margin-top:8px;">Started in <b>1921</b>. Presently <b>12,167 Van Panchayats</b> in Uttarakhand managing forest areas.</p>
+
+    <h2 style="margin-top:18px;">⛏️ Natural & Mineral Resources</h2>
+    <div class="highlight">Main minerals: <b>Magnesite, Gypsum, Limestone, Dolomite, Marble, Copper, Iron ore, Graphite, Gold (placer)</b></div>
+    <ul>
+      <li>Copper ores historically mined in Garhwal division</li>
+      <li>Graphite & gypsum found in Lesser Himalayas region</li>
+      <li>Magnesite found in middle Himalayas</li>
+      <li>State has significant <b>hydroelectric potential</b> due to rivers</li>
+      <li>Over <b>175 species</b> of aromatic & medicinal plants (major economic resource)</li>
+      <li>Agriculture: 14% land under cultivation; key crops = rice, wheat, fruits (apples)</li>
+      <li>65% of population depends on agriculture</li>
+    </ul>
+    <div class="tip">💡 <b>Exam Tip:</b> Uttarakhand is called "organic state" — known for medicinal herbs, aromatic plants. Hydroelectricity is a key natural resource. Tehri Dam = highest dam in India.</div>
+  </div>
+</div>
+
+<!-- SOIL -->
+<div id="soil" class="section">
+  <div class="card">
+    <h2>🪨 Soil Resources of Uttarakhand</h2>
+    <p style="font-size:0.87em; margin-bottom:10px;">All soils in Uttarakhand are <b>susceptible to soil erosion</b> due to steep slopes and fragile geology.</p>
+    <table>
+      <tr><th>Soil Type</th><th>Location</th><th>Characteristics</th></tr>
+      <tr><td><b>High Altitude Meadow Soil</b></td><td>Near snowline (Greater Himalayas)</td><td>High organic matter, shallow, well-drained; supports alpine grasses</td></tr>
+      <tr><td><b>Podzol Soil</b></td><td>Coniferous forest zones</td><td>Acidic, infertile; leached minerals; distinct profile layers</td></tr>
+      <tr><td><b>Brown Forest Soil</b></td><td>Middle altitudes (south of Greater Himalayas)</td><td>Rich in humus, slightly acidic; good for horticulture; shallow, gravelly</td></tr>
+      <tr><td><b>Alluvial Soil</b></td><td>River valleys (Doon Valley), Terai region</td><td>Fertile, rich in minerals; ideal for rice, wheat, sugarcane; deep & well-drained</td></tr>
+      <tr><td><b>Bhabar Soil</b></td><td>Bhabar belt (Shiwalik base)</td><td>Coarse, sandy to gravelly, highly porous, largely <b>infertile</b></td></tr>
+      <tr><td><b>Terai Soil</b></td><td>Southern Terai</td><td>Rich clayey loam with fine sand & humus; well suited for rice & sugarcane</td></tr>
+      <tr><td><b>Glacial/Gravel Soil</b></td><td>Northernmost areas</td><td>Ranges from gravel (glacier debris) to stiff clay</td></tr>
+      <tr><td><b>Quartzite Soil</b></td><td>Nainital district</td><td>Light, infertile; contains quartz and cysts</td></tr>
+      <tr><td><b>Brown/Lime Soil</b></td><td>Nainital, Mussoorie, Chakrata</td><td>High percentage of lime</td></tr>
+    </table>
+    <div class="tip">💡 <b>Key contrast:</b> Terai soil = most fertile (rice/sugarcane). Bhabar soil = infertile (porous). Alpine meadow soil = high organic matter.</div>
+  </div>
+</div>
+
+<!-- POPULATION -->
+<div id="pop" class="section">
+  <div class="card">
+    <h2>👥 Population (Census 2011)</h2>
+    <table>
+      <tr><th>Parameter</th><th>Uttarakhand</th><th>India (for comparison)</th></tr>
+      <tr><td>Total Population</td><td><b>10,086,292</b> (~1.01 crore)</td><td>1.21 billion</td></tr>
+      <tr><td>% of India's population</td><td><b>0.83%</b></td><td>—</td></tr>
+      <tr><td>Males</td><td>5,137,773</td><td>—</td></tr>
+      <tr><td>Females</td><td>4,948,519</td><td>—</td></tr>
+      <tr><td>Rural Population</td><td><b>69.77%</b></td><td>—</td></tr>
+      <tr><td>Urban Population</td><td><b>30.23%</b></td><td>—</td></tr>
+      <tr><td>Sex Ratio</td><td><b>963–989</b> females/1000 males</td><td>940</td></tr>
+      <tr><td>Literacy Rate</td><td><b>78.82% – 79.63%</b></td><td>74.04%</td></tr>
+      <tr><td>Population Density</td><td><b>189</b> per km²</td><td>—</td></tr>
+      <tr><td>Decadal Growth (2001–11)</td><td><b>18.81%</b></td><td>17.64%</td></tr>
+      <tr><td>Tribal Population</td><td><b>2.89%</b></td><td>—</td></tr>
+      <tr><td>Rank (populous)</td><td><b>19th–20th</b> most populous</td><td>—</td></tr>
+    </table>
+    <h3>Languages</h3>
+    <ul>
+      <li><b>Garhwali</b> – ~23% (western UK)</li>
+      <li><b>Kumaoni</b> – ~20% (eastern UK)</li>
+      <li><b>Jaunsari</b> – ~1.3% (Jaunsar-Bawar, Dehradun district)</li>
+      <li><b>Hindi</b> – official/administrative language</li>
+    </ul>
+    <h3>Most Populous Districts (2011)</h3>
+    <div class="highlight">Dehradun & Udham Singh Nagar — each population over <b>1 million</b></div>
+    <h3>State Symbols</h3>
+    <table>
+      <tr><th>Symbol</th><th>Name</th></tr>
+      <tr><td>State Animal</td><td>Musk Deer (Kasturi Mrig)</td></tr>
+      <tr><td>State Bird</td><td>Himalayan Monal (Danphe)</td></tr>
+      <tr><td>State Flower</td><td>Brahma Kamal</td></tr>
+      <tr><td>State Tree</td><td>Burans (Rhododendron)</td></tr>
+      <tr><td>State Fish</td><td>Golden Mahseer</td></tr>
+    </table>
+    <div class="tip">💡 <b>Exam Tip:</b> UK literacy (79.63%) &gt; National avg (74%). UK sex ratio (963–989) &gt; National avg (940). Both show better human development.</div>
+  </div>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz" class="section">
+  <div class="quiz-section">
+    <h2>📝 Practice MCQs – Unit 1</h2>
+    <div id="quiz-container"></div>
+    <button class="btn" onclick="checkQuiz()">Submit Answers</button>
+    <button class="btn" onclick="resetQuiz()" style="background:#e74c3c;">Reset</button>
+    <div class="score-box" id="score-box"></div>
+  </div>
+</div>
+
+<script>
+const sections = ['loc','mtn','peaks','glaciers','rivers','lakes','resources','soil','pop','quiz'];
+const navBtns = document.querySelectorAll('nav button');
+
+function show(id) {
+  sections.forEach(s => document.getElementById(s).classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  navBtns.forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+
+const questions = [
+  { q: "What is the total area of Uttarakhand?", opts: ["43,483 km²","53,483 km²","63,483 km²","48,000 km²"], ans: 1 },
+  { q: "Uttarakhand was formed on which date as the 27th state of India?", opts: ["9 November 2000","9 November 2001","15 August 2000","26 January 2001"], ans: 0 },
+  { q: "Which is the highest peak of Uttarakhand?", opts: ["Kamet","Trishul","Nanda Devi","Chaukhamba"], ans: 2 },
+  { q: "The Gangotri glacier is the source of which river?", opts: ["Yamuna","Alaknanda","Bhagirathi","Mandakini"], ans: 2 },
+  { q: "At which confluence do Bhagirathi and Alaknanda join to form the Ganga?", opts: ["Rudraprayag","Karnaprayag","Nandaprayag","Devprayag"], ans: 3 },
+  { q: "The 'Gaumukh' is the snout of which glacier?", opts: ["Pindari","Khatling","Gangotri","Milam"], ans: 2 },
+  { q: "Which lake in Uttarakhand is also called 'Mystery Lake' or 'Skeleton Lake'?", opts: ["Satopanth Tal","Roopkund","Dodital","Vasundhara Tal"], ans: 1 },
+  { q: "Milam glacier, the largest in Kumaon region, is the source of which river?", opts: ["Kosi","Ramganga","Gori Ganga","Pindar"], ans: 2 },
+  { q: "As per Census 2011, what is the literacy rate of Uttarakhand?", opts: ["72%","74%","78.82%","85%"], ans: 2 },
+  { q: "What percentage of Uttarakhand's area is covered by forests?", opts: ["35.44%","45.44%","55%","65%"], ans: 1 },
+  { q: "Which is the state flower of Uttarakhand?", opts: ["Rhododendron","Lotus","Brahma Kamal","Marigold"], ans: 2 },
+  { q: "Tehri Dam is built on which river?", opts: ["Alaknanda","Mandakini","Bhagirathi","Yamuna"], ans: 2 },
+  { q: "The latitude extent of Uttarakhand is:", opts: ["24°N to 28°N","28°43′N to 31°27′N","25°N to 30°N","30°N to 35°N"], ans: 1 },
+  { q: "Which is the largest lake in Kumaon region?", opts: ["Naini Tal","Sattal","Bhimtal","Naukuchiatal"], ans: 2 },
+  { q: "Khatling glacier is the source of which river?", opts: ["Pindar","Alaknanda","Bhilangana","Kali"], ans: 2 },
+  { q: "The sex ratio of Uttarakhand as per 2011 census was:", opts: ["900","963","940","889"], ans: 1 },
+  { q: "Van Panchayats in Uttarakhand were started in which year?", opts: ["1900","1910","1921","1947"], ans: 2 },
+  { q: "Which peak is known as 'Queen of Garhwal'?", opts: ["Trishul","Neelkanth","Nanda Devi","Kamet"], ans: 1 },
+  { q: "Which river forms the eastern boundary of Uttarakhand with Nepal?", opts: ["Ramganga","Gori Ganga","Kali (Sharda)","Pindar"], ans: 2 },
+  { q: "Hemkund Sahib lake is located in which district?", opts: ["Uttarkashi","Rudraprayag","Chamoli","Bageshwar"], ans: 2 },
+];
+
+function buildQuiz() {
+  const container = document.getElementById('quiz-container');
+  container.innerHTML = '';
+  questions.forEach((q, i) => {
+    let optsHtml = q.opts.map((o, j) => `<label id="lbl_${i}_${j}"><input type="radio" name="q${i}" value="${j}"> ${o}</label>`).join('');
+    container.innerHTML += `<div class="question" id="q${i}"><p>Q${i+1}. ${q.q}</p><div class="options">${optsHtml}</div></div>`;
+  });
+}
+
+function checkQuiz() {
+  let score = 0;
+  questions.forEach((q, i) => {
+    const selected = document.querySelector(`input[name="q${i}"]:checked`);
+    if (selected) {
+      const val = parseInt(selected.value);
+      document.getElementById(`lbl_${i}_${q.ans}`).classList.add('correct');
+      if (val !== q.ans) document.getElementById(`lbl_${i}_${val}`).classList.add('wrong');
+      else score++;
+    } else {
+      document.getElementById(`lbl_${i}_${q.ans}`).classList.add('correct');
+    }
+    document.querySelectorAll(`input[name="q${i}"]`).forEach(r => r.disabled = true);
+  });
+  const sb = document.getElementById('score-box');
+  sb.style.display = 'block';
+  const pct = Math.round(score/questions.length*100);
+  sb.innerHTML = `✅ Score: ${score}/${questions.length} (${pct}%) — ${pct>=80?'Excellent! 🎉':pct>=60?'Good, keep revising 📚':'Need more practice 💪'}`;
+}
+
+function resetQuiz() {
+  document.getElementById('score-box').style.display = 'none';
+  buildQuiz();
+}
+
+buildQuiz();
+</script>
+</body>
+</html>
